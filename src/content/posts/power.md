@@ -61,16 +61,16 @@ From his book, aptly titled “Power”:
 
 The three personal qualities embodied in will are 
 
--   (https://zenstrategies.com/ambition/), 
--   (https://zenstrategies.com/energy/), and 
--   (https://zenstrategies.com/focus/) 
+-   (/ambition/), 
+-   (/energy/), and 
+-   (/focus/) 
 
 The four skills useful in acquiring power are 
 
--   (https://zenstrategies.com/self-discovery/) and a reflective mind-set, 
--   (https://zenstrategies.com/confidence/) and the ability to project self-assurance, 
--   the ability to (https://zenstrategies.com/anticipate/) and empathize with their point of view, and 
--   a capacity to (https://zenstrategies.com/tolerating-conflict/).”
+-   (/self-discovery/) and a reflective mind-set, 
+-   (/confidence/) and the ability to project self-assurance, 
+-   the ability to (/anticipate/) and empathize with their point of view, and 
+-   a capacity to (/tolerating-conflict/).”
 
 **Action Summary:**
 
