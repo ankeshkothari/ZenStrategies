@@ -1,0 +1,72 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { getCollection } from 'astro:content';
+
+const posts = await getCollection('posts');
+const sortedPosts = posts.sort((a, b) => b.data.date.getTime() - a.data.date.getTime());
+---
+
+<BaseLayout title="Stratagems">
+  <section class="stratagems">
+    {sortedPosts.map((post, i) => (
+      <>
+        <article class="stratagem-item">
+          <h2>
+            <a href={`/${post.id}/`}>{post.data.title}</a>
+          </h2>
+        </article>
+        {i < sortedPosts.length - 1 && <hr class="divider" />}
+      </>
+    ))}
+  </section>
+</BaseLayout>
+
+<style>
+  .stratagems {
+    padding: var(--spacing-lg) 0;
+  }
+
+  .stratagem-item {
+    text-align: center;
+    padding: var(--spacing-xl) 0;
+  }
+
+  .stratagem-item h2 {
+    font-size: 2.4rem;
+    margin: 0;
+  }
+
+  .stratagem-item a {
+    color: var(--color-text);
+    text-decoration: none;
+  }
+
+  .stratagem-item a:hover {
+    color: var(--color-accent);
+  }
+
+  .divider {
+    border: none;
+    border-top: 1px solid var(--color-border);
+    position: relative;
+    margin: 0;
+  }
+
+  .divider::after {
+    content: '//';
+    position: absolute;
+    top: -0.7em;
+    left: 50%;
+    transform: translateX(-50%);
+    background: var(--color-bg);
+    padding: 0 0.5rem;
+    color: var(--color-text-muted);
+    font-size: 0.85rem;
+  }
+
+  @media (max-width: 600px) {
+    .stratagem-item h2 {
+      font-size: 1.6rem;
+    }
+  }
+</style>

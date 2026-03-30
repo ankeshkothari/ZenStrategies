@@ -1,0 +1,94 @@
+---
+const navLinks = [
+  { href: '/stratagems/', label: 'Stratagems' },
+  { href: '/subscribe/', label: 'Subscribe' },
+  { href: '/contact/', label: 'Contact' },
+];
+---
+
+<header class="header">
+  <nav class="nav">
+    <div class="nav-left">
+      <a href="/" class="logo">ZenStrategies</a>
+      <span class="tagline">Strategy + Story Telling</span>
+    </div>
+    <ul class="nav-links">
+      {navLinks.map((link) => (
+        <li>
+          <a href={link.href}>{link.label}</a>
+        </li>
+      ))}
+    </ul>
+  </nav>
+</header>
+
+<style>
+  .header {
+    background-color: var(--color-bg);
+    border-bottom: 1px solid var(--color-border);
+  }
+
+  .nav {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: var(--spacing-md) var(--spacing-lg);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .nav-left {
+    display: flex;
+    align-items: baseline;
+    gap: var(--spacing-md);
+  }
+
+  .logo {
+    font-family: 'Lora', Georgia, serif;
+    font-weight: 700;
+    font-size: 1.25rem;
+    color: var(--color-text);
+    text-decoration: none;
+  }
+
+  .logo:hover {
+    color: var(--color-text);
+  }
+
+  .tagline {
+    color: var(--color-text-muted);
+    font-size: 0.85rem;
+  }
+
+  .nav-links {
+    display: flex;
+    gap: var(--spacing-lg);
+    list-style: none;
+    padding: 0;
+  }
+
+  .nav-links a {
+    color: var(--color-text);
+    font-size: 0.9rem;
+    text-decoration: none;
+  }
+
+  .nav-links a:hover {
+    color: var(--color-accent);
+  }
+
+  @media (max-width: 600px) {
+    .nav {
+      flex-direction: column;
+      gap: var(--spacing-sm);
+    }
+
+    .tagline {
+      display: none;
+    }
+
+    .nav-links {
+      gap: var(--spacing-md);
+    }
+  }
+</style>

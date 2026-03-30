@@ -1,0 +1,95 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+
+<BaseLayout title="Home">
+  <section class="hero">
+    <h1>Can a weekly email change your life?</h1>
+  </section>
+
+  <img src="https://zenstrategies.com/wp-content/uploads/Otto-Von-Bismarck-Quote-min-450x338.jpg" alt="Fools learn from experience. Wise men learn from history. Otto Von Bismarck" class="hero-image" />
+
+  <section class="intro">
+    <h2>When you mix strategy with stories, you get Zen Strategies.</h2>
+    <ul>
+      <li>One email per week.</li>
+      <li>With one or two stories.</li>
+      <li>And an action summary.</li>
+      <li>That will help you live a happy meaningful life.</li>
+    </ul>
+    <p>But can an email really help you?</p>
+  </section>
+
+  <section class="why">
+    <h2>Why should you subscribe to Zen Strategies?</h2>
+
+    <p><strong>1.</strong></p>
+    <p>Matajuro Yagyu has an ambition to become a master swordsman. So he goes to Mount Futara to find and convince Banzo &ndash; one of the greatest swordsmen who has ever lived &ndash; to teach him.</p>
+    <p>On meeting Banzo, Matajuro asks: How many years will it take to become a master?</p>
+    <p>Banzo replies: about 10 years.</p>
+    <p>Matajuro pushes further: But I want to learn faster than that. What if I put in extra effort and work hard and practice 10 hours a day?</p>
+    <p>Banzo replies: In that case, it&rsquo;ll take you 20 years.</p>
+    <p>We are all victims of haste. Excessive haste. An urgency to get things done yesterday. And in this process, we forget to see the forest for the trees.</p>
+    <p>Zen Strategies is a weekly newsletter that aims to be the lotus in the muddy pond. It aims to grab you with one story every week that helps you take a pause and think about the direction of your life. It gives you the strategy &ndash; the spark required to make a few changes to achieve success and happiness.</p>
+
+    <p><strong>2.</strong></p>
+    <p>Bronnie Ware is a hospice nurse from Australia. Her work involves caring for patients who are terminally ill and may pass away within 12 weeks. A few years back, she started recording the dying epiphanies of her patients. She asked her patients if they had any regrets or if they would have done anything differently. And she found a few common themes recur again and again in all the answers she received.</p>
+
+    <h3>The most common regrets people have are:</h3>
+    <ol>
+      <li>I wish I&rsquo;d had the courage to live a life true to myself, not the life others expected of me.</li>
+      <li>I wish I hadn&rsquo;t worked so hard.</li>
+      <li>I wish I&rsquo;d had the courage to express my feelings.</li>
+      <li>I wish I had stayed in touch with my friends.</li>
+      <li>I wish that I had let myself be happier.</li>
+    </ol>
+
+    <p>Zen Strategies is a weekly newsletter that makes a humble attempt to help you live a regret-free life. It&rsquo;ll cover a range of topics.</p>
+    <ul>
+      <li>Happiness. Peace. Balance.</li>
+      <li>Health. Wisdom. Wealth.</li>
+      <li>Power and popularity.</li>
+      <li>Fun. Food. Friends.</li>
+    </ul>
+
+    <p>One or two short stories. With a moral. And an action summary. Zen Strategies is the Aesop&rsquo;s fables for the 21st century. The Zen Koans that are easier to interpret.</p>
+    <p>If that is something that interests you, then please <a href="/subscribe/">subscribe</a>.</p>
+  </section>
+</BaseLayout>
+
+<style>
+  .hero {
+    text-align: center;
+    padding: var(--spacing-xl) 0 var(--spacing-lg);
+  }
+
+  .hero h1 {
+    font-size: 3.5rem;
+    line-height: 1.15;
+  }
+
+  @media (max-width: 600px) {
+    .hero h1 {
+      font-size: 2.2rem;
+    }
+  }
+
+  .hero-image {
+    width: 100%;
+    margin-bottom: var(--spacing-xl);
+    border-radius: 4px;
+  }
+
+  .intro, .why {
+    margin-bottom: var(--spacing-xl);
+  }
+
+  .intro ul, .why ul, .why ol {
+    padding-left: var(--spacing-lg);
+    margin-bottom: var(--spacing-lg);
+  }
+
+  .intro li, .why li {
+    margin-bottom: var(--spacing-sm);
+  }
+</style>
